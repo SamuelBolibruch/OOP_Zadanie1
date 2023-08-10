@@ -28,6 +28,7 @@ public class Bang extends Karta {
 
         if (!uholSa) {
             Karta vedla = new Vedla();
+
             if (protihrac.maKartu(vedla, protihrac.getKartyNaRuke()) != -1) {
                 System.out.println(BangLite.ANSI_YELLOW + protihrac.getMeno() + " ma kartu 'Vedla' ktoru zahral. \n" + BangLite.ANSI_RESET);
                 balicek.getBalicek().add(protihrac.getKartyNaRuke().get(protihrac.maKartu(vedla, protihrac.getKartyNaRuke())));
